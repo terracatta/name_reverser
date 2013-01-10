@@ -1,5 +1,8 @@
 NameReverser::Application.routes.draw do
-  # The priority is based upon order of creation:
+  root :to => "pages#home"
+  post "/reverse" => "pages#reverse", as: 'reverse'
+
+    # The priority is based upon order of creation:
   # first created -> highest priority.
 
   # Sample of regular route:
